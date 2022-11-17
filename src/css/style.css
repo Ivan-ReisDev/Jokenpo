@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.opcoes img {
+    width: 50px;
+}
+
+.botao {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #696969;
+    margin: 1em;
+}
+
+.button {
+    background-color: #696969;
+}
+
+
+.amarelo {
+    background-color: #ffbd2f;
+}
+
+.campo {
+    height: 350px;
+    width: 600px;
+    background-color: #696969;
+    display: flex;
+    border-radius: 50px;
+}
+
+.campo img {
+    width: 150px;
+}
+
+.player {
+    height: 100%;
+    width: 50%;
+}
+
+.bot {
+    height: 100%;
+    width: 50%;
+
+}
+
+.player, .bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 10px 30px;
+    background-color: #ffbd2f;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    margin: 2em;
+    transition: .6s;
+    font-size: 18px;
+}
+
+input:hover {
+    background-color: #696969;
+    color: white;
+    cursor: pointer;
+}

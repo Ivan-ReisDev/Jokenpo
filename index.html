@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Jokenpô</title>
+</head>
+<body>
+        <h1>Jokenpô</h1>
+
+    <div class="opcoes">
+        <button onclick="OpcaoPlayer(0)" class="botao-individual botao"><img src="src/img/pedra.png" alt="Pedra"></button>
+        <button onclick="OpcaoPlayer(1)" class="botao-individual botao"><img src="src/img/papel.png" alt="Papel"></button>
+        <button onclick="OpcaoPlayer(2)" class="botao-individual botao"><img src="src/img/tesoura.png" alt="Tesoura"></button>
+    </div>
+    <section class="campo">
+        <div class="player">
+            <img id="player" src="src/img/loading.gif" alt="">
+        </div>
+
+        <div class="bot">
+            <img id="bot" src="src/img/loading.gif" alt="">
+        </div>
+
+    </section>
+    <section>
+        <p>Player Jogou: </p>
+       <p>Bot Jogou: <span id="botJogada"></span></p>
+    </section>
+    <section id="resultado"></section>
+    <input type="button" name="jogar" id="jogar" value="Jogar" onclick="resultado()">
+    
+    <script src="src/js/index.js"></script>
+</body>
+</html>
