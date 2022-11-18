@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,47 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Jokenpô</title>
 </head>
-<body>
-        <h1>Jokenpô</h1>
 
+<body>
+    <section class="placar">
+
+        <div>
+            <h3><span id="placar-player">0</span> Player</h3>
+        </div>
+
+        <div>
+            <h3>Bot <span id="placar-bot">0</span></h3>
+        </div>
+
+    </section>
+    <h1>Jokenpô</h1>
     <div class="opcoes">
-        <button onclick="OpcaoPlayer(0)" class="botao-individual botao"><img src="src/img/pedra.png" alt="Pedra"></button>
-        <button onclick="OpcaoPlayer(1)" class="botao-individual botao"><img src="src/img/papel.png" alt="Papel"></button>
-        <button onclick="OpcaoPlayer(2)" class="botao-individual botao"><img src="src/img/tesoura.png" alt="Tesoura"></button>
+        <button onclick="OpcaoPlayer(0)" class="botao-individual botao"><img src="src/img/pedra.png"
+                alt="Pedra"></button>
+        <button onclick="OpcaoPlayer(1)" class="botao-individual botao"><img src="src/img/papel.png"
+                alt="Papel"></button>
+        <button onclick="OpcaoPlayer(2)" class="botao-individual botao"><img src="src/img/tesoura.png"
+                alt="Tesoura"></button>
     </div>
+    <input type="button" name="jogar" id="jogar" value="Jogar" onclick="resultado()">
     <section class="campo">
         <div class="player">
-            <img id="player" src="src/img/loading.gif" alt="">
+            <h2>Player</h2>
+            <div>
+                <img id="player" src="src/img/loading.gif" alt="">
+            </div>
         </div>
 
         <div class="bot">
-            <img id="bot" src="src/img/loading.gif" alt="">
+            <h2>Computador</h2>
+            <div>
+                <img id="bot" src="src/img/loading.gif" alt="">
+            </div>
         </div>
 
     </section>
-    <section>
-        <p>Player Jogou: </p>
-       <p>Bot Jogou: <span id="botJogada"></span></p>
-    </section>
     <section id="resultado"></section>
-    <input type="button" name="jogar" id="jogar" value="Jogar" onclick="resultado()">
-    
     <script src="src/js/index.js"></script>
 </body>
+
 </html>
