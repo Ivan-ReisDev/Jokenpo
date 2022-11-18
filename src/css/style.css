@@ -8,6 +8,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3 {
+    margin: 0;
+}
+
 .opcoes img {
     width: 50px;
 }
@@ -24,10 +28,6 @@ body {
     background-color: #696969;
 }
 
-
-.amarelo {
-    background-color: #ffbd2f;
-}
 
 .campo {
     height: 350px;
@@ -46,16 +46,27 @@ body {
     width: 50%;
 }
 
-.bot {
-    height: 100%;
-    width: 50%;
-
-}
-
-.player, .bot {
+.player div,
+.bot div {
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
+}
+
+.bot {
+    height: 100%;
+    width: 50%;
+}
+
+.player,
+.bot {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 input {
@@ -65,13 +76,50 @@ input {
     font-weight: bold;
     border-radius: 25px;
     border: none;
-    margin: 2em;
     transition: .6s;
     font-size: 18px;
+    margin-bottom: 1em;
 }
 
 input:hover {
     background-color: #696969;
     color: white;
     cursor: pointer;
+}
+
+.placar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#placar-player,
+#placar-bot {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+@media (max-width: 605px) {
+    .campo {
+        height: 250px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 505px) {
+    .campo {
+        height: 200px;
+        width: 350px;
+    }
+
+    .campo img {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
 }
